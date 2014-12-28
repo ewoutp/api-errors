@@ -5,7 +5,7 @@ import (
 )
 
 // Is the given error a google api error?
-func IsApiError(err error, reason Reason) bool {
+func IsApiError(err error) bool {
 	_, ok := err.(*googleapi.Error)
 	return ok
 }
