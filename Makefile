@@ -5,10 +5,10 @@ GOBUILDDIR := $(WD)/.gobuild
 all: build
 
 prepare:
-	GOPATH=$(GOBUILDDIR) go get github.com/google/google-api-go-client/googleapi
+	GOPATH=$(GOBUILDDIR) go get google.golang.org/api/googleapi
 
 clean:
 	rm -Rf $(GOBUILDDIR)
 
 build: prepare
-	go build 
+	GOPATH=$(GOBUILDDIR) go build

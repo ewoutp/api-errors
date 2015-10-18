@@ -1,7 +1,7 @@
 package apierrors
 
 import (
-	"github.com/google/google-api-go-client/googleapi"
+	"google.golang.org/api/googleapi"
 )
 
 // Is the given error a google api error?

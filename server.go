@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/google/google-api-go-client/googleapi"
+	"google.golang.org/api/googleapi"
 )
 
 // Send an error response conform the googleapi error format.
